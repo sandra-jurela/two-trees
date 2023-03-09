@@ -1,5 +1,5 @@
-```
-ELECT DISTINCT
+``` sql
+SELECT DISTINCT
     products.product_name,
     products.size,
     products.price,
