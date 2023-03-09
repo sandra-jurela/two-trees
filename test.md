@@ -1,13 +1,13 @@
 ``` sql
 SELECT DISTINCT
-    products.product_name,
-    products.size,
-    products.price,
-    order_lines.sku,
-    "total_sold" = sum(order_lines.quantity) 
-        OVER (PARTITION BY order_lines.sku)
+  products.product_name,
+  products.size,
+  products.price,
+  order_lines.sku,
+  "total_sold" = sum(order_lines.quantity) 
+    OVER (PARTITION BY order_lines.sku)
 FROM twotrees.sales.order_lines INNER JOIN twotrees.inventory.products
-    ON order_lines.sku = products.sku
+  ON order_lines.sku = products.sku
 ORDER BY "total_sold" DESC
 ```
 
