@@ -3,3 +3,5 @@
 # Querying the Two Trees Database
 
 This repo contains SQL notebook created in Azure Data Studio connected with SQL Server on Docker. 
+
+:point_right: [SQL Notebook](https://github.com/sandra-jurela/two-trees/blob/main/TwoTrees_Notebook.ipynb)
